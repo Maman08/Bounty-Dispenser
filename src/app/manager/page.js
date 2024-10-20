@@ -229,11 +229,11 @@ const contract = getContract({
   abi: contractABI,
 });
 
-function Avatar({ Manager, alt }) {
-  return (
-    <img className="w-16 h-16 rounded-full border-2 border-purple-500" src={Manager} alt={alt} />
-  )
-}
+const Avatar = ({ src, alt }) => (
+  <div className="relative inline-block w-35 h-35 mb-4 ring-2 ring-purple-500 rounded-full overflow-hidden">
+    <img src={src} alt={alt} className="w-full h-full object-cover" />
+  </div>
+);
 
 function Select({ options, value, onChange }) {
   return (
@@ -401,7 +401,7 @@ const ManagerDashboard = () => {
       {/* Sidebar */}
       <div className="w-64 bg-gray-800 p-6 shadow-lg">
         <div className="flex flex-col items-center mb-6">
-          <Avatar src={Manager} alt="Maintainer" />
+          <Avatar src="https://api.dicebear.com/6.x/bottts/svg?seed=Octocat" alt="@shadcn" />
           <h2 className="text-xl font-bold text-gray-100">Maintainer</h2>
           <p className="text-sm text-gray-400">Open Source Visionary</p>
         </div>
