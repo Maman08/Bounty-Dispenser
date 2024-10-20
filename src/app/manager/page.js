@@ -525,7 +525,7 @@ const ManagerDashboard = () => {
               {filteredBounties.map(bounty => (
                 <tr key={bounty.id}>
                   <td>{bounty.issueLink}</td>
-                  <td>${bounty.amount}</td>
+                  <td>ETH{Number(bounty.amount.toString())/1000000000000}</td>
                   <td>{bounty.isOpen ? 'Open' : 'Closed'}</td>
                   <td>{bounty.rewardee_username || 'Not Assigned'}</td>
                   <td>{bounty.isCompleted ? 'Yes' : 'No'}</td>
