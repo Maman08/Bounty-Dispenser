@@ -3,7 +3,7 @@
 }
 
 .textGradient {
-    background: linear-gradient(to right, #ff4e50, #fc9e3c); /* Violetish Pink */
+    background: linear-gradient(to right, #ff4e50, #7c3aed); /* Violetish Pink */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
