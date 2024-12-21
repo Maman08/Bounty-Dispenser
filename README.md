@@ -49,9 +49,11 @@ To get started with the Open-Source Bounty Dispenser platform, follow these step
    git clone https://github.com/Maman08/Bounty-Dispenser.git
 
 2. Install Dependencies
-  ```bash
-    cd bounty-dispenser
-    npm install
+   ```bash
+   cd BOunty-Dispenser
+   npm install
+
+
 
 3. Set up environment variables    
    
