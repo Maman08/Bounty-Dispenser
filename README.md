@@ -5,7 +5,7 @@ The **Open-Source Bounty Dispenser** is a platform designed to transform how ope
 
 ## Proposed Solution
 
-This platform that connects blockchain and GitHub to automate and simplify bounty management. Key features include:
+This platform that connects blockchain and GitHub to automate and simplify bounty management.. Key features include:
 
 - **Blockchain-Enabled Bounty Management**: Secure and transparent transactions for assigning and receiving bounties using blockchain technology.
 - **Seamless Integration with GitHub**: Easy integration with GitHub, allowing project maintainers to link issues directly to bounties and track contributors' progress.
