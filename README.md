@@ -29,11 +29,6 @@ This platform that connects blockchain and GitHub to automate and simplify bount
 - **Tailwind CSS**: A utility-first CSS framework for building custom designs without writing custom CSS.
 - **Thirdweb**: A framework for integrating Web3 and blockchain technologies in a decentralized way.
 
-### Blockchain:
-- **Ethereum**: Used for creating and managing smart contracts that handle bounty allocations and payouts securely.
-
-### Database:
-- **PostgreSQL**: A relational database used to store user data, bounties, and project information.
 
 ## Installation
 
