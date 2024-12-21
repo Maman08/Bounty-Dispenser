@@ -50,7 +50,7 @@ To get started with the Open-Source Bounty Dispenser platform, follow these step
 
 2. Install Dependencies
    ```bash
-   cd BOunty-Dispenser
+   cd Bounty-Dispenser
    npm install
 
 
