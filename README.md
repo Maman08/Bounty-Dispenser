@@ -1,7 +1,7 @@
 
 # Open-Source Bounty Dispenser
 
-The **Open-Source Bounty Dispenser** is a platform designed to transform how open-source contributions are rewarded. By integrating blockchain technology with GitHub, it provides a seamless experience for maintainers to assign and manage bounties for project issues. Contributors can track their progress, and receive secure payouts. Our platform ensures fair, transparent, and efficient rewards, making open-source development more engaging and rewarding for all.
+The **Open-Source Bounty Dispenser** is a platform designed to transform how open-source contributions are rewarded. By integrating blockchain technology with GitHub, it provides a seamless experience for maintainers to assign and manage bounties for project issues. Contributors can track their progress, and receive secure payouts.. Our platform ensures fair, transparent, and efficient rewards, making open-source development more engaging and rewarding for all.
 
 ## Proposed Solution
 
