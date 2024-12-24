@@ -4,17 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { ConnectButton, lightTheme, useActiveAccount } from "thirdweb/react";
 import { client } from "../client";
-import { FaGithub, FaChevronDown } from "react-icons/fa"; // Import ChevronDown for dropdown
+import { FaGithub, FaChevronDown } from "react-icons/fa"; 
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
     const account = useActiveAccount();
     const [showGithubModal, setShowGithubModal] = useState(false);
-    const [showDropdown, setShowDropdown] = useState(false); // State for dropdown visibility
+    const [showDropdown, setShowDropdown] = useState(false); 
 
     useEffect(() => {
         if (account) {
-            // Show the modal when the wallet is connected
             console.log("account: ",account)
             setShowGithubModal(true);
         }
@@ -25,7 +24,7 @@ const Navbar = () => {
     };
 
     const toggleDropdown = () => {
-        setShowDropdown(!showDropdown); // Toggle dropdown on click
+        setShowDropdown(!showDropdown);
     };
 
     return (
@@ -34,7 +33,7 @@ const Navbar = () => {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div className="flex flex-shrink-0 items-center">
                         <div className="flex items-center space-x-1">
-                            <FaGithub className="text-violet-300" style={{ fontSize: "2rem" }} /> {/* Increased size of GitHub Icon */}
+                            <FaGithub className="text-violet-300" style={{ fontSize: "2rem" }} /> 
                             <h1 className="font-bold" style={{ fontSize: "2rem" }}>
                                 <span className={styles.textGradient}>Bounty</span>
                                 <span className={styles.textGradient2}>Dispenser</span>
@@ -42,7 +41,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="hidden sm:ml-6 sm:block">
-                        <div className="relative flex items-center space-x-4"> {/* Add space for the "Issue" button */}
+                        <div className="relative flex items-center space-x-4"> 
                             {account && (
                                 <>
                                     <button
@@ -50,10 +49,10 @@ const Navbar = () => {
                                         onClick={toggleDropdown}
                                         className="rounded-md px-3 py-2 text-lg font-medium text-violet-700 hover:text-white transition duration-200 ease-in-out flex items-center"
                                     >
-                                        Dashboard <FaChevronDown className="ml-2" /> {/* Add dropdown arrow */}
+                                        Dashboard <FaChevronDown className="ml-2" /> 
                                     </button>
 
-                                    <Link href="/bounties"> {/* Link to /issues */}
+                                    <Link href="/bounties"> 
                                         <button className="rounded-md px-3 py-2 text-lg font-medium text-violet-700 hover:text-white transition duration-200 ease-in-out">
                                             Bounties
                                         </button>
