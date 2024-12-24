@@ -29,9 +29,9 @@
 //       }
 //       return true;
 //     },
-//     async session({ session, token }) {  // Changed from user to token
+//     async session({ session, token }) {  
 //       await connectDB();
-//       const dbUser = await User.findOne({ githubId: token.sub });  // Use token.sub instead of user.id
+//       const dbUser = await User.findOne({ githubId: token.sub }); 
 //       if (dbUser) {
 //         session.user.accessToken = dbUser.accessToken;
 //         session.user.id = dbUser._id;
@@ -75,12 +75,12 @@
 //         const existingUser = await User.findOne({ githubId: user.id });
 //         if (existingUser) {
 //           existingUser.accessToken = account.access_token;
-//           existingUser.githubUsername = profile.login; // GitHub username
+//           existingUser.githubUsername = profile.login; 
 //           await existingUser.save();
 //         } else {
 //           await User.create({
 //             githubId: user.id,
-//             githubUsername: profile.login, // Use profile.login here
+//             githubUsername: profile.login, 
 //             accessToken: account.access_token,
 //           });
 //         }
@@ -90,7 +90,7 @@
 //     async jwt({ token, account, profile }) {
 //       if (account && profile) {
 //         token.accessToken = account.access_token;
-//         token.githubUsername = profile.login; // Add to JWT token
+//         token.githubUsername = profile.login; 
 //       }
 //       return token;
 //     },
@@ -125,10 +125,10 @@
 // import connectDB from '@/lib/db';
 // import User from '@/models/User';
 
-// export const authOptions: NextAuthOptions = { // Explicit typing here
+// export const authOptions: NextAuthOptions = { 
 //   providers: [
 //     GithubProvider({
-//       clientId: process.env.GITHUB_ID || '', // Add fallback to avoid undefined values
+//       clientId: process.env.GITHUB_ID || '', 
 //       clientSecret: process.env.GITHUB_SECRET || '',
 //       scope: 'user:email read:user repo'
 //     }),
@@ -143,12 +143,12 @@
 //         const existingUser = await User.findOne({ githubId: user.id });
 //         if (existingUser) {
 //           existingUser.accessToken = account.access_token;
-//           existingUser.githubUsername = profile.login; // GitHub username
+//           existingUser.githubUsername = profile.login; 
 //           await existingUser.save();
 //         } else {
 //           await User.create({
 //             githubId: user.id,
-//             githubUsername: profile.login, // Use profile.login here
+//             githubUsername: profile.login, 
 //             accessToken: account.access_token,
 //           });
 //         }
@@ -158,7 +158,7 @@
 //     async jwt({ token, account, profile }) {
 //       if (account && profile) {
 //         token.accessToken = account.access_token;
-//         token.githubUsername = profile.login; // Add to JWT token
+//         token.githubUsername = profile.login; 
 //       }
 //       return token;
 //     },
@@ -240,6 +240,5 @@ const authOptions = {
   debug: true,
 };
 
-// Explicitly export the HTTP method handlers as individual functions
 export const GET = NextAuth(authOptions);
 export const POST = NextAuth(authOptions);
