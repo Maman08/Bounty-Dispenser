@@ -1,5 +1,4 @@
-
-
+// v1 of home page
 
 // import React, { useState } from 'react';
 // import { Github, Zap, Lock, Users, Code, ChevronRight, Layers, ArrowUpRight } from 'lucide-react';
@@ -170,7 +169,7 @@
 
 
 
-
+//v2 of home page
 
 import React from 'react';
 import { Github, Zap, Shield, Users, Bot, Lock } from 'lucide-react';
